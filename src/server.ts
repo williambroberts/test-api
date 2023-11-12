@@ -1,11 +1,8 @@
-import { createApp } from "./app"
+const createApp__server = require("./app")
 
-const express = require("express")
 //
-const app = createApp();
-// app.get("/",(req:any,res:any)=>{
-//     res.send("hi will")
-// })
+const app = createApp__server();
+
 app.listen(5000,()=>{
     console.log("ok done")
 })
